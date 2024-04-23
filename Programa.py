@@ -23,18 +23,23 @@ def acepta_cadena_nueva(cadena, estado_inicial, transiciones, estados_aceptacion
 
 # Bucle que permite al usuario verificar cadenas repetidamente hasta que decida salir.
 while True:
-    print("---------------------------------------------")
-    print("REALIZADO POR:\n Juan Carrillo (Crack)\n Daniel Escorcia (Gooty) \n David Silvera (El calvo)")
-    print("---------------------------------------------")
+    print("--------------------------------------------------------------------------------------------------------")
+    print(" __      __       _  __ _               _                  _                      _                       ")
+    print(" \ \    / /      (_)/ _(_)             | |                | |                    | |                      ")
+    print("  \ \  / /__ _ __ _| |_ _  ___ __ _  __| | ___  _ __    __| | ___    ___ __ _  __| | ___ _ __   __ _ ___  ")
+    print("   \ \/ / _ \ '__| |  _| |/ __/ _` |/ _` |/ _ \| '__|  / _` |/ _ \  / __/ _` |/ _` |/ _ \ '_ \ / _` / __| ")
+    print("    \  /  __/ |  | | | | | (_| (_| | (_| | (_) | |    | (_| |  __/ | (_| (_| | (_| |  __/ | | | (_| \__ \ ")
+    print("     \/ \___|_|  |_|_| |_|\___\__,_|\__,_|\___/|_|     \__,_|\___|  \___\__,_|\__,_|\___|_| |_|\__,_|___/ ")
+    print("--------------------------------------------------------------------------------------------------------")
     print("\n1. Ingresar y verificar una cadena.")
     print("2. Salir.")
     opcion = input("Elige una opción: ")
-    print("---------------------------------------------")
+    print("--------------------------------------------------------------------------------------------------------")
 
     if opcion == '1':
         cadena_ingresada_por_usuario = input("Por favor, ingresa la cadena que deseas verificar: ")
         resultado_nuevo = acepta_cadena_nueva(cadena_ingresada_por_usuario, estado_inicial_nuevo, transiciones_nueva, estados_aceptacion_nuevo)
-        print("---------------------------------------------")
+        print("--------------------------------------------------------------------------------------------------------")
         print("La cadena '{}' es {}.".format(cadena_ingresada_por_usuario, "aceptada" if resultado_nuevo else "rechazada"))
     elif opcion == '2':
         print("Saliendo del programa.")
